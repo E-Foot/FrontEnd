@@ -17,7 +17,17 @@
 .disp_block{
     display: block;
 }
+.log_div{
+    width: 90%;
+}
 .auth_input{
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px #434343 solid;
+    padding-left: 30px;
+}
+.log_input{
     background-color: #E8E8E8;
     width: 100%;
     height: 45px;
@@ -32,6 +42,9 @@
     color: white;
     transition: 0.5s;
     cursor: pointer;
+}
+.rb{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .auth_sub:hover{
     background-color: white;
