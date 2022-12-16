@@ -5,7 +5,7 @@
     </div>
     <div class="block">
         <div *ngIf="stades" >
-            <div *ngFor="let stade of stades" [routerLink]="['/reservation', stade.id]">
+            <div *ngFor="let stade of stades" [routerLink]="['/reservation:', stade.id]">
                 <div class="terrains_chx w-3/5 h-52 center ">
                     <div class="flex">
                         <img src="../../assets/images/terr_test.png" class="h-52" alt="">
