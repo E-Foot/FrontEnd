@@ -7,21 +7,24 @@ import { Observable,of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 import {  catchError} from 'rxjs/operators';
 import {  HttpHeaders } from '@angular/common/http';
-
-
-
+import { Reservation } from '../shared/reservation';
 
 @Injectable({
   providedIn: 'root'
 })
-export class StadeService {
+export class ReservationService {
 
   constructor(private http: HttpClient) { }
 
-  
-  getStades(): Observable<Stade[]> {
-    return this.http.get<Stade[]>(baseURL + 'api/stades');
-
-  }
-
+  putReservation(reservation: Reservation): Observable <Reservation> {
+    const httpOptions = {
+      headers: new HttpHeaders ({
+        'Content-Type':  'application/json'
+      })
+    };
+    
+    var res=JSON.stringify(reservation); 
+    console.log(res);
+    return this.http.post<Reservation>(baseURL + 'api/reservations/save' , res, httpOptions)
+}
 }
