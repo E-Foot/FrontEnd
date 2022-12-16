@@ -20,7 +20,7 @@ export class StadeService {
 
   
   getStades(): Observable<Stade[]> {
-    return this.http.get<Stade[]>(baseURL + 'stades');
+    return this.http.get<Stade[]>(baseURL + 'api/stades');
 
   }
 

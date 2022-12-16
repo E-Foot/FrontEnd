@@ -17,6 +17,10 @@ import { ReservationComponent } from './reservation/reservation.component';
 import { PaiementComponent } from './paiement/paiement.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MapComponent } from './map/map.component';
+import { HeaderProprietaireComponent } from './header-proprietaire/header-proprietaire.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import { PropStadesComponent } from './prop-stades/prop-stades.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { MapComponent } from './map/map.component';
     Us06Component,
     ReservationComponent,
     PaiementComponent,
-    MapComponent
+    MapComponent,
+    HeaderProprietaireComponent,
+    PropStadesComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,9 @@ import { MapComponent } from './map/map.component';
     AgmCoreModule.forRoot({
       apiKey : 'AIzaSyDoU3JSWTN__iFC2BPqf6F47eXpbBXqZPs'
       //AIzaSyDvjRJ4hPTpxWNcB01x1pzQtupCSXhksbs
-    })
+    }),
+    BrowserAnimationsModule,
+    MatIconModule
    
   ],
   providers: [
