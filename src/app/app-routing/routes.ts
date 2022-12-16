@@ -12,6 +12,7 @@ export const routes: Routes = [
   { path: 'stadee',     component: Us06Component },
   { path: 'stade',     component: StadesComponent },
   { path: 'reservation/:id',     component: ReservationComponent },
+  { path: 'reservation',     component: ReservationComponent },
   { path: 'signup',  component: RegisterComponent }
   
 ];

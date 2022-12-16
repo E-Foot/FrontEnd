@@ -1,10 +1,11 @@
 <div class="mt-10 block">
     <div class="center terrains_head block">
         <p class="pt-3 pl-8  text-lg">Terrains</p>
+        
     </div>
     <div class="block">
         <div *ngIf="stades" >
-            <div *ngFor="let stade of stades" [routerLink]="['/reservation', stade.id]">
+            <div *ngFor="let stade of stades" [routerLink]="['/reservation:', stade.id]">
                 <div class="terrains_chx w-3/5 h-52 center ">
                     
                     <div class="flex">
