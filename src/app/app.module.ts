@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AgmCoreModule } from '@agm/core';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,11 @@ import { Us06Component } from './us06/us06.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { PaiementComponent } from './paiement/paiement.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MapComponent } from './map/map.component';
+import { HeaderProprietaireComponent } from './header-proprietaire/header-proprietaire.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import { PropStadesComponent } from './prop-stades/prop-stades.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +31,22 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     StadesComponent,
     Us06Component,
     ReservationComponent,
-    PaiementComponent
+    PaiementComponent,
+    MapComponent,
+    HeaderProprietaireComponent,
+    PropStadesComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey : 'AIzaSyDoU3JSWTN__iFC2BPqf6F47eXpbBXqZPs'
+      //AIzaSyDvjRJ4hPTpxWNcB01x1pzQtupCSXhksbs
+    }),
+    BrowserAnimationsModule,
+    MatIconModule
    
   ],
   providers: [
@@ -40,3 +55,36 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// import { BrowserModule } from '@angular/platform-browser';
+// import { NgModule, Component } from '@angular/core';
+
+// import { AgmCoreModule } from '@agm/core';
+
+// @Component({
+//   selector: 'app-root',
+//   styles: [`
+//     agm-map {
+//       height: 300px;
+//     }
+//   `],
+//   template: `
+//   <agm-map [latitude]="lat" [longitude]="lng"></agm-map>
+//   `
+// })
+// export class AppComponent {
+//   lat: number = 51.678418;
+//   lng: number = 7.809007;
+// }
+
+// @NgModule({
+//   imports: [
+//     BrowserModule,
+//     AgmCoreModule.forRoot({
+//       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
+//     })
+//   ],
+//   declarations: [ AppComponent ],
+//   bootstrap: [ AppComponent ]
+// })
+// export class AppModule {}

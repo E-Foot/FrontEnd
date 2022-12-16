@@ -7,8 +7,12 @@
         <div *ngIf="stades" >
             <div *ngFor="let stade of stades" [routerLink]="['/reservation:', stade.id]">
                 <div class="terrains_chx w-3/5 h-52 center ">
+                    
                     <div class="flex">
+                        <!-- <app-map class="w-72"></app-map> -->
+
                         <img src="../../assets/images/terr_test.png" class="h-52" alt="">
+
                         <div class="block pl-8 pt-6">
                             <h6 class="text-base">{{stade.id }}</h6>
                             <h6 class="text-sm mt-1">{{stade.id }}</h6>
