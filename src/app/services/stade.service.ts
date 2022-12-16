@@ -20,11 +20,8 @@ export class StadeService {
 
   
   getStades(): Observable<Stade[]> {
-<<<<<<< HEAD
     return this.http.get<Stade[]>(baseURL + 'api/stades');
     
-=======
     return this.http.get<Stade[]>(baseURL + 'stades');
->>>>>>> parent of 8def4ee (Api stades)
   }
 }
