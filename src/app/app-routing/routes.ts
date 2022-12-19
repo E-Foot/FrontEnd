@@ -8,7 +8,6 @@ import { ReservationComponent } from '../reservation/reservation.component';
 import { StadesComponent } from '../stades/stades.component'; 
 import { PropStadesComponent } from '../prop-stades/prop-stades.component';
 
-
 export const routes: Routes = [
   { path: 'login',     component: LoginComponent },
   { path: 'stadee',     component: Us06Component },

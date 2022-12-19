@@ -6,3 +6,7 @@
 <app-prop-stades></app-prop-stades> -->
 <!-- <app-reservation></app-reservation> -->
 <!-- <app-paiement></app-paiement> -->
+
+<app-header *ngIf="!router.url.includes('prop/stade')"></app-header>
+<app-header-proprietaire *ngIf="router.url.includes('prop/stade')"></app-header-proprietaire>
+<router-outlet></router-outlet>

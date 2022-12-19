@@ -8,5 +8,6 @@ import { Routes } from '@angular/router';
 
 })
 export class AppComponent {
+  constructor(public router: Router){} 
   title = 'F2R_FrontEnd';
 }
