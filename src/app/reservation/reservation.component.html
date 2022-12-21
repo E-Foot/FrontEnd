@@ -1,5 +1,6 @@
 <div class="mt-9 block pl-24 pr-24 mb-32">
     <app-map></app-map>
+    <h1 *ngIf="stade" >{{stade.id}}</h1>
     <div class="flex mt-9 ">
         <div class="left_reservation block h-11">
             <img src="../../assets/images/terr_test.png" alt="" class="w-full" srcset="">
@@ -12,6 +13,7 @@
                 <h6 class="text-sm">&nbsp;&nbsp;&nbsp;Espace des supporteurs</h6>
             </div>
             <p class="pl-3 text-sm w-3/4 text-second_font mt-3">
+
                 Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression...
             </p>
         </div>
@@ -69,8 +71,8 @@
                 
 
                 <div class=" mt-7 flex">
-                    <input (click)="getValue()" type="submit" name="" id="" value="Réserver" class="auth_sub mt-3">
-                    <input  type="submit" name="" id="" value="Inviter" class="auth_sub_inv mt-3">
+                    <input (click)="getValue()"  name="" id="" value="Réserver" class="auth_sub mt-3" [routerLink]="['/stade']">
+                    <input  (click)="ngOnInit()" name="" id="" value="Inviter" class="auth_sub_inv mt-3">
 
                 </div>
                 

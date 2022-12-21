@@ -16,7 +16,7 @@ export class ReservationService {
 
   constructor(private http: HttpClient) { }
 
-  putReservation(reservation: Reservation): Observable <Reservation> {
+  putReservation(reservation: Reservation,/*stade:Stade*/): Observable <Reservation> {
     const httpOptions = {
       headers: new HttpHeaders ({
         'Content-Type':  'application/json'

@@ -21,6 +21,7 @@ import { HeaderProprietaireComponent } from './header-proprietaire/header-propri
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { PropStadesComponent } from './prop-stades/prop-stades.component';
+import { ComplexeComponent } from './complexe/complexe.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { PropStadesComponent } from './prop-stades/prop-stades.component';
     PaiementComponent,
     MapComponent,
     HeaderProprietaireComponent,
-    PropStadesComponent
+    PropStadesComponent,
+    ComplexeComponent
   ],
   imports: [
     BrowserModule,

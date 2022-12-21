@@ -21,7 +21,12 @@ export class StadeService {
   
   getStades(): Observable<Stade[]> {
     return this.http.get<Stade[]>(baseURL + 'api/stades');
-
-  }
+   }
+   getStadeById(id: number): Observable<Stade>{
+    return this.http.get<Stade>(baseURL + 'api/stade/'+id)
+   }
+   getStadesById(id: number): Observable<any>{
+    return this.http.get(baseURL + 'api/stade/'+id)
+   }
 
 }

@@ -5,25 +5,26 @@
     </div>
     <div class="block">
         <div *ngIf="stades" >
+            <script>
+                console.log(stades);
+            </script>
             <div *ngFor="let stade of stades" [routerLink]="['/reservation:', stade.id]">
-                <div class="terrains_chx w-3/5 h-52 center ">
-                    
+                <div class="terrains_chx w-3/5 h-52 center ">                 
                     <div class="flex">
                         <!-- <app-map class="w-72"></app-map> -->
-
                         <img src="../../assets/images/terr_test.png" class="h-52" alt="">
 
                         <div class="block pl-8 pt-6">
-                            <h6 class="text-base">{{stade.id }}</h6>
+                            <a routerLink="/complexe">{{stade.complexe.nom}}<h6 class="text-base"></h6></a>
                             <h6 class="text-sm mt-1">{{stade.id }}</h6>
                             <div class="flex mt-1">
                                 <img src="../../assets/icons/true.png" width="20px" alt="">
                                 <h6 class="text-sm">&nbsp;&nbsp;&nbsp;Espace des supporteurs</h6>
                             </div>
                             <p class="text-sm w-3/4 text-second_font mt-3">
-                                Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression...
+                                {{stade.description}}
                             </p>
-                            <button routerLink="/reservation" class="bg-green_button text-white text-sm w-32 h-8 rounded-sm res_button">Réserver</button>
+                            <button [routerLink]="['/reservation', stade.id]" class="bg-green_button text-white text-sm w-32 h-8 rounded-sm res_button">Réserver</button>
                         </div>
 
                     </div>

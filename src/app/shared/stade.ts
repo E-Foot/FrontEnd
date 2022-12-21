@@ -1,3 +1,5 @@
+import { Complexe } from "./complexe";
+
 export class Stade {
     id !: string ;
     capacite !: string;
@@ -6,5 +8,6 @@ export class Stade {
     image!: string;
     supporteur!: boolean;
     prixParHeure!: string;
+    complexe!: Complexe;
 
 }

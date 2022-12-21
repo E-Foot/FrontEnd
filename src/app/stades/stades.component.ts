@@ -16,7 +16,9 @@ export class StadesComponent implements OnInit{
 
   ngOnInit(): void {
 
-   this.StadeService.getStades().subscribe(stades => this.stades = stades);
+   this.StadeService.getStades().subscribe(stades => this.stades = stades );
+   
+   
 
   }
 
