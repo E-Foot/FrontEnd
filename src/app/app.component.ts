@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +10,4 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(public router: Router){} 
   title = 'F2R_FrontEnd';
-  
 }

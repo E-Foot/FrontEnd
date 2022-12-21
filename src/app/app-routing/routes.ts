@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'stade',     component: StadesComponent },
   { path: 'reservation/:id',     component: ReservationComponent },
   { path: 'reservation',     component: ReservationComponent },
-  { path: 'prop/stade',     component: PropStadesComponent },
+  { path: 'proprietaire/stade',     component: PropStadesComponent },
   { path: 'signup',  component: RegisterComponent }
   
 ];
