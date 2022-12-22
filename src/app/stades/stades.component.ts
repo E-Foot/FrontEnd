@@ -4,6 +4,7 @@ import { StadeService } from '../services/stade.service';
 import { baseURL } from '../shared/baseurl';
 import { Stade } from '../shared/stade';
 
+
 @Component({
   selector: 'app-stades',
   templateUrl: './stades.component.html',
