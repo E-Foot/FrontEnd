@@ -22,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { PropStadesComponent } from './prop-stades/prop-stades.component';
 import { ComplexeComponent } from './complexe/complexe.component';
+import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ComplexeComponent } from './complexe/complexe.component';
     MapComponent,
     HeaderProprietaireComponent,
     PropStadesComponent,
-    ComplexeComponent
+    ComplexeComponent,
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

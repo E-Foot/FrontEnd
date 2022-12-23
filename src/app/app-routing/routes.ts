@@ -8,8 +8,11 @@ import { ReservationComponent } from '../reservation/reservation.component';
 import { StadesComponent } from '../stades/stades.component'; 
 import { PropStadesComponent } from '../prop-stades/prop-stades.component';
 import { ComplexeComponent } from '../complexe/complexe.component';
+import { HomeComponent } from '../home/home.component';
 
 export const routes: Routes = [
+  { path: '',     component: HomeComponent },
+  { path: 'home',     component: HomeComponent },
   { path: 'login',     component: LoginComponent },
   { path: 'stadee',     component: Us06Component },
   { path: 'stade',     component: StadesComponent },

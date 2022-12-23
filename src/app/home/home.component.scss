@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../res/CIRCULARSTD-MEDIUM.OTF');
+}
+
+.center{
+    margin: 0 auto;
+}
+div{
+    font-family: 'Circular';
+}
+.sponsor{
+    background-image: url('../../assets/images/back\ annone.png');
+}
+.annonce{
+    text-align: center;
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.11);
+    border-radius: 17px;
+}
+.annonce_chx{
+    transition: 0.5s;
+}
+.annonce_chx:hover{
+    background: linear-gradient(97.87deg, #34173D 0%, rgba(52, 23, 61, 0.76) 43.34%, rgba(52, 23, 61, 0.36) 92.62%);
+    color: white;
+}
+.annonce_chx:hover .annonce_reserver{
+    background-color: #FF2882;
+    color: white;
+}
+.annonce_reserver{
+    border-top: 1px #FF2882 solid;
+    border-bottom: 1px #FF2882 solid;
+}
+.event_desc{
+    background-image: url('../../assets/images/event_bg.png');
+    background-size: cover;
+}
+.event_location{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.event_location:hover{
+    box-shadow: 0px 4px 31px rgba(255, 255, 255, 0.6);
+}
+.app_mobile{
+    background-image: url('../../assets/images/mobile_bg.png');
+    background-size: cover;
+}
+.get_it{
+    font-family: 'Circular';
+    font-size: 30px;
+}
+.playstore{
+}
