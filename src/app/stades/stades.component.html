@@ -14,17 +14,17 @@
                         <!-- <app-map class="w-72"></app-map> -->
                         <img src="../../assets/images/terr_test.png" class="h-52" alt="">
 
-                        <div class="block pl-8 pt-6">
-                            <a  [routerLink]="['/complexe', stade.complexe.id]" >{{stade.complexe.nom}}<h6 class="text-base"></h6></a>
-                            <h3 class="text-sm mt-1">{{stade.prixParHeure+' DH' }}</h3>
+                        <div class="block pl-8 pt-3 space-y-0">
+                            <p><a  [routerLink]="['/complexe', stade.complexe.id]" >{{stade.complexe.nom}}<p class="text-base"></p></a></p>
+                            <p class="text-sm mt-1">{{stade.prixParHeure+' DH' }}</p>
                             <div class="flex mt-1">
                                 <img src="../../assets/icons/true.png" class="h-5" alt="">
                                 <h6 class="text-sm">&nbsp;&nbsp;&nbsp;Espace des supporteurs</h6>
                             </div>
-                            <p class="text-sm w-3/4 text-second_font mt-3">
+                            <p class="text-xs w-3/4 text-second_font mt-3">
                                 {{stade.description}}
                             </p>
-                            <button [routerLink]="['/reservation', stade.id]" class="bg-green_button text-white text-sm w-32 h-8 rounded-sm res_button">Réserver</button>
+                            <button [routerLink]="['/reservation', stade.id]" class="bg-green_button text-white text-sm w-32 h-8 rounded-sm res_button -mt-4">Réserver</button>
                         </div>
 
                     </div>
