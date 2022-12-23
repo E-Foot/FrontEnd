@@ -8,7 +8,7 @@ import { ReservationComponent } from '../reservation/reservation.component';
 import { StadesComponent } from '../stades/stades.component'; 
 import { PropStadesComponent } from '../prop-stades/prop-stades.component';
 import { ComplexeComponent } from '../complexe/complexe.component';
-import { ComplexeComponent } from '../complexe/complexe.component';
+
 
 export const routes: Routes = [
   { path: 'login',     component: LoginComponent },
