@@ -8,9 +8,10 @@
         </div>
     </div>
 </div>
-<div class="map w-5/6 flex  pt-24 pb-20">
+<div *ngIf="complexe">
+<div  class="map w-5/6 flex  pt-24 pb-20">
     <div class="block w-2/6 center pt-10">
-        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique,on...</p>
+        <p>{{complexe.adresse}}</p>
     </div>
     <div class="w-6/6">
         <agm-map class="h-64 w-96" [latitude]="latitude" [longitude]="longitude" >
@@ -26,26 +27,28 @@
     </div>
 
 </div>
+</div>
 <div class="stades pb-32">
     
     <div class="block">
         <div class="center terrains_head flex">
             <p class="pt-3 pl-8 text-lg">Terrains</p>
         </div>
+        <div *ngIf="complexe">
         <div class="block">
-            <div >
-                <div >
+            <div *ngIf="complexe.listStades">
+                <div *ngFor="let stade of complexe.listStades" >
                     <div class="terrains_chx w-3/5 h-44 center mb-10">
                         
                         <div class="flex">
-                            <!-- <app-map class="w-72"></app-map> -->
+                          
 
                             <img src="../../assets/images/terr_test.png" class="h-44" alt="">
 
                             <div class="flex">
                                 <div class="block pl-8 pt-6 mr-80">
-                                    <h6 class="text-base">Complexe Urban 5</h6>
-                                    <h6 class="text-sm mt-1">SQ</h6>
+                                    <h6 class="text-base">{{complexe.nom}}</h6>
+                                    <h6 class="text-sm mt-1">{{stade.prixParHeure+' DH' }}</h6>
                                     <div class="flex mt-1">
                                         <img src="../../assets/icons/true.png" class="h-5" alt="">
                                         <h6 class="text-sm">&nbsp;&nbsp;&nbsp;Espace des supporteurs</h6>
@@ -61,6 +64,7 @@
             </div>
             
         </div>
+    </div>
 
     </div>
 

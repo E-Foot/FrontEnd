@@ -10,6 +10,7 @@ import { PropStadesComponent } from '../prop-stades/prop-stades.component';
 import { ComplexeComponent } from '../complexe/complexe.component';
 import { HomeComponent } from '../home/home.component';
 
+
 export const routes: Routes = [
   { path: '',     component: HomeComponent },
   { path: 'home',     component: HomeComponent },
@@ -20,6 +21,6 @@ export const routes: Routes = [
   { path: 'reservation',     component: ReservationComponent },
   { path: 'proprietaire/stade',     component: PropStadesComponent },
   { path: 'signup',  component: RegisterComponent },
-  { path: 'complexe',  component: ComplexeComponent }
+  { path: 'complexe/:id',  component: ComplexeComponent }
   
 ];

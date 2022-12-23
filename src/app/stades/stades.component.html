@@ -15,7 +15,7 @@
                         <img src="../../assets/images/terr_test.png" class="h-52" alt="">
 
                         <div class="block pl-8 pt-6">
-                            <a routerLink="/complexe">{{stade.complexe.nom}}<h6 class="text-base"></h6></a>
+                            <a  [routerLink]="['/complexe', stade.complexe.id]" >{{stade.complexe.nom}}<h6 class="text-base"></h6></a>
                             <h3 class="text-sm mt-1">{{stade.prixParHeure+' DH' }}</h3>
                             <div class="flex mt-1">
                                 <img src="../../assets/icons/true.png" class="h-5" alt="">
@@ -82,9 +82,11 @@
                 </div>
             </div>
         </div>
+
+            
+        
+       
         <!-- <div class="terrains_chx w-3/5 h-52 center ">
             <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
           </div> -->
-    </div>
 
-</div>
