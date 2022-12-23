@@ -41,4 +41,10 @@ export class ComplexeComponent implements OnInit{
     this.longitude = event.coords.lng;
     this.locationChoosen = true;
   }
+  onChoseLocation(event){
+    console.log(event)
+    this.latitude = event.coords.lat;
+    this.longitude = event.coords.lng;
+    this.locationChoosen = true;
+  }
 }
