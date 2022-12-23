@@ -7,4 +7,20 @@
     background-image: url('../../assets/images/footer.png');
     background-size: cover;
     font-family: 'Circular';
+    
+}
+.cr{
+    font-family: 'Circular';
+}
+.footer_element{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.center{
+    margin: 0 auto;
+}
+div{
+    font-family: 'Circular';
 }
