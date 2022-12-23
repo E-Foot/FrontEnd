@@ -18,5 +18,6 @@ export class MapComponent {
     this.latitude = event.coords.lat;
     this.longitude = event.coords.lng;
     this.locationChoosen = true;
+    console.log('lat '+this.latitude+'long '+this.longitude)
   }
 }

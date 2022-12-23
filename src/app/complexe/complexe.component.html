@@ -1,1 +1,71 @@
-<p>complexe works!</p>
+<div class="complexe center pt-10">
+    <div class="w-3/5 mt-16 center flex">
+        <img src="../../assets/collabs/uf.png" class="w-52 ml-24" alt="">
+        <div class="block right-64 m-auto space-y-1">
+            <h2>Urban Five UniSprots - Marrakech</h2>
+            <h4>Nombre de terrains : 9</h4>
+            <p class="-mt-11">Longitude : 31.73171388 , Latitude : 17.77317187</p>
+        </div>
+    </div>
+</div>
+<div *ngIf="complexe">
+<div  class="map w-5/6 flex  pt-24 pb-20">
+    <div class="block w-2/6 center pt-10">
+        <p>{{complexe.adresse}}</p>
+    </div>
+    <div class="w-6/6">
+        <agm-map class="h-64 w-96" [latitude]="latitude" [longitude]="longitude" >
+            <agm-marker 
+            [latitude]="latitude" 
+            [longitude]="longitude"
+            
+            >
+            <!-- *ngIf="locationChoosen" -->
+            </agm-marker>
+        </agm-map>
+        
+    </div>
+
+</div>
+</div>
+<div class="stades pb-32">
+    
+    <div class="block">
+        <div class="center terrains_head flex">
+            <p class="pt-3 pl-8 text-lg">Terrains</p>
+        </div>
+        <div *ngIf="complexe">
+        <div class="block">
+            <div *ngIf="complexe.listStades">
+                <div *ngFor="let stade of complexe.listStades" >
+                    <div class="terrains_chx w-3/5 h-44 center mb-10">
+                        
+                        <div class="flex">
+                          
+
+                            <img src="../../assets/images/terr_test.png" class="h-44" alt="">
+
+                            <div class="flex">
+                                <div class="block pl-8 pt-6 mr-80">
+                                    <h6 class="text-base">{{complexe.nom}}</h6>
+                                    <h6 class="text-sm mt-1">{{stade.prixParHeure+' DH' }}</h6>
+                                    <div class="flex mt-1">
+                                        <img src="../../assets/icons/true.png" class="h-5" alt="">
+                                        <h6 class="text-sm">&nbsp;&nbsp;&nbsp;Espace des supporteurs</h6>
+                                    </div>
+                                
+                                </div>
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    </div>
+
+</div>

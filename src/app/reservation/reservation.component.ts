@@ -57,6 +57,7 @@ stade:Stade
       console.log("%j", this.reservation);
 
       const id = +this.route.snapshot.params['id'];
+
       this.stadeService.getStadesById(id).subscribe((stade) => {
         this.stade = stade;
         console.log(this.stade);
@@ -66,6 +67,7 @@ stade:Stade
           this.reservation = reservation; /*this.reservationCopy = reservation;*/
            })
        });
+       
        console.log('id  '+this.stade);
 
 
