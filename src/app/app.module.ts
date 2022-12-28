@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { StadeComponent } from './proprietaire/stade/stade.component';
 import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component';
+import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component'
     HomeComponent,
     FooterComponent,
     StadeComponent,
-    AddStadeComponent
+    AddStadeComponent,
+    SponsorshipComponent
   ],
   imports: [
     BrowserModule,
