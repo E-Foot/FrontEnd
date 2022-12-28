@@ -24,6 +24,8 @@ import { PropStadesComponent } from './prop-stades/prop-stades.component';
 import { ComplexeComponent } from './complexe/complexe.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { StadeComponent } from './proprietaire/stade/stade.component';
+import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { FooterComponent } from './footer/footer.component';
     PropStadesComponent,
     ComplexeComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    StadeComponent,
+    AddStadeComponent
   ],
   imports: [
     BrowserModule,
