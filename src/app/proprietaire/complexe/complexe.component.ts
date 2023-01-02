@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './complexe.component.html',
   styleUrls: ['./complexe.component.scss']
 })
-export class ComplexeComponent {
+export class PropComplexeComponent {
 
 }
