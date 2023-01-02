@@ -21,10 +21,14 @@ export class ReservationService {
       headers: new HttpHeaders ({
         'Content-Type':  'application/json'
       })
-    };
-    
+    }; 
     var res=JSON.stringify(reservation); 
     console.log(res);
     return this.http.post<Reservation>(baseURL + 'api/reservations/save' , reservation, httpOptions)
 }
+
+  getAnnonces(): Observable<Reservation[]> {
+  return this.http.get<Reservation[]>(baseURL + 'api/annonces');
+ }
+
 }

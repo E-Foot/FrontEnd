@@ -7,5 +7,6 @@ export class Reservation {
     heureReservation!: String;
     prix!: boolean;
     stade!: Stade;
+    nbr_j_m!: String;
    
 }
