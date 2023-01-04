@@ -28,6 +28,8 @@ import { StadeComponent } from './proprietaire/stade/stade.component';
 import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component';
 import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.component';
 import { PropComplexeComponent } from './proprietaire/complexe/complexe.component';
+import { ReservationTerrainComponent } from './proprietaire/reservation-terrain/reservation-terrain.component';
+import { ReservationListeComponent } from './proprietaire/reservation-liste/reservation-liste.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { PropComplexeComponent } from './proprietaire/complexe/complexe.componen
     StadeComponent,
     AddStadeComponent,
     SponsorshipComponent,
-    PropComplexeComponent
+    PropComplexeComponent,
+    ReservationTerrainComponent,
+    ReservationListeComponent
   ],
   imports: [
     BrowserModule,
