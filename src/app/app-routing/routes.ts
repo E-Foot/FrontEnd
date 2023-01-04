@@ -11,6 +11,8 @@ import { ComplexeComponent } from '../complexe/complexe.component';
 import { HomeComponent } from '../home/home.component';
 import { StadeComponent } from '../proprietaire/stade/stade.component';
 import { PropComplexeComponent } from '../proprietaire/complexe/complexe.component';
+import { ReservationTerrainComponent } from '../proprietaire/reservation-terrain/reservation-terrain.component' 
+import { ReservationListeComponent } from '../proprietaire/reservation-liste/reservation-liste.component' 
 
 
 export const routes: Routes = [
@@ -23,7 +25,9 @@ export const routes: Routes = [
   { path: 'reservation',     component: ReservationComponent },
   { path: 'proprietaire/stade',     component: StadeComponent },
   { path: 'proprietaire/complexe',     component: PropComplexeComponent },
+  { path: 'proprietaire/reservations',     component: ReservationTerrainComponent },
+  { path: 'proprietaire/reservations/liste',     component: ReservationListeComponent },
   { path: 'signup',  component: RegisterComponent },
-  { path: 'complexe/:id',  component: ComplexeComponent }
+  { path: 'complexe/:id',  component: ComplexeComponent },
   
 ];

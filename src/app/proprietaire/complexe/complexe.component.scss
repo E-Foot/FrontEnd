@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../../res/CIRCULARSTD-MEDIUM.OTF');
+}
+
+.complexe, h1{
+    font-family: 'Circular';
+}
 .center{
     margin: 0 auto;
 }
@@ -7,3 +15,6 @@
 .down_comp{
     
 }
+// agm-map{
+//     height: 13rem;
+// }

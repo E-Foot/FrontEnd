@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../../res/CIRCULARSTD-MEDIUM.OTF');
+}
+
+.res_liste, h1, p{
+    font-family: 'Circular';
+}
+
+.center{
+    margin: 0 auto;
+}
+.head_table{
+    background-color: #F1F1F1;
+}
+.body_table{
+    border-bottom: #F1F1F1 1px solid;
+
+}
+tbody{
+    height: 400px;
+    overflow-x: hidden;
+}
+tbody::-webkit-scrollbar{
+    display: none;
+  }
+thead,tbody{
+    display: block;
+}
+.body_ligne{
+    border-bottom: #F1F1F1 1px solid;
+    height: 40px;
+
+}
+.res_table{
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.11);
+    transition: 0.5s;
+
+}
+.res_table:hover{
+    box-shadow: 0px 4px 31px rgba(246, 177, 74, 0.1);
+}
+table thead, table tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+table {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+table thead {
+    /* head takes the height it requires, 
+    and it's not scaled when table is resized */
+    flex: 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+table tbody {
+    /* body takes all the remaining available space */
+    flex: 1 1 auto;
+    display: block;
+}
+table tbody tr {
+    width: 100%;
+}
+
+thead,
+tbody tr {
+    display: table;
+    table-layout: fixed;
+}
+
+thead {
+    flex: 0 0 auto;
+    width: "calc(100% - @{scrollbar-width})";
+}
+
+tbody {
+    display: block;
+    flex: 1 1 auto;
+
+    tr {
+    width: 100%;
+    }
+}

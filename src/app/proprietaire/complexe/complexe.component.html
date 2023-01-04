@@ -1,8 +1,43 @@
-<div class="center block">
-    <div class="up_comp flex center">
-        <img src="../../../assets/collabs/uf.png" class="center h-36" alt="">
+<div class="complexe center block pt-12">
+    <div class="up_comp flex center w-3/4">
+        <div class="w-80">
+            <img src="../../../assets/collabs/uf.png" class="center h-36" alt="">
+        </div>
+        <div class="block">
+            <h1 class="text-sm">Terrain Nom - Ville</h1>
+            <p>Nombre de terrains : 9</p>
+            <p class="-mt-10">Latitude : 31.3003242 , Longitude : 31.30032429</p>
+        </div>
+        <div class="w-80  pl-40">
+            <a href="" class="left-auto right-0"><button class="bg-secondary w-64 h-10 text-white rounded-md"> + &nbsp;Ajouter un terrain</button></a>
+        </div>
     </div>
-    <div class="down_comp">
-
+    <div class="down_comp flex pl-56 pr-56 mt-16">
+        <div class="down_left h-36 w-7/12 block">
+            <div class="w-3/4">
+                <!-- Description -->
+                <p class="text-gray-500">Le Lorem Ipsum est simplement du faux texte employé dans la composition 
+                    et la mise en page avant impression. Le Lorem Ipsum est le faux texte 
+                    standard de l'imprimerie depuis les années 1500, quand un imprimeur
+                    anonyme assembla ensemble des morceaux de texte pour réaliser un livre 
+                    spécimen de polices de texte. </p>
+            </div>
+            <div class="flex mt-4 mb-4">
+                <img src="../../../assets/icons/calendar_black.png" class="h-5" alt="">
+                <!-- Opening closing time  -->
+                <p>&nbsp;&nbsp;&nbsp;De 06:00 à 22:00</p>
+            </div>
+            <a href=""><button class="bg-green-600 w-52 h-12 rounded-md text-white">Modifier</button></a>
+        </div>
+        <div class="down_right bg bg-green-600 h-72 -mt-10 w-5/12">
+            <agm-map class="h-full w-full" [latitude]="latitude" [longitude]="longitude" >
+                <agm-marker 
+                [latitude]="latitude" 
+                [longitude]="longitude"   
+                >
+                <!-- *ngIf="locationChoosen" -->
+                </agm-marker>
+            </agm-map>
+        </div>
     </div>
 </div>
