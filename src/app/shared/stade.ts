@@ -2,7 +2,7 @@ import { Complexe } from "./complexe";
 
 export class Stade {
     id !: string ;
-    capacite !: string;
+    capacite !: number;
     disponibilite !: string;
     description!: string;
     image!: string;

@@ -1,6 +1,6 @@
 <div class="mt-9 block pl-24 pr-24 mb-32">
     <app-map class="m h-48"></app-map>
-    <h1 *ngIf="stade" >{{stade.id}}</h1>
+    <h1 *ngIf="stade" >{{stadecap}}</h1>
     <div class="flex mt-9 ">
         <div class="left_reservation block h-11">
             <img src="../../assets/images/terr_test.png" alt="" class="w-full" srcset="">
@@ -22,9 +22,9 @@
             <div class="mb-32">
 
                 <div class="flex">
-                    <div class="disp_block log_div mr-3">
+                    <div class="disp_block log_div ml-3">
                         <label class="ml-5">Nombre de Joueurs : </label><br>
-                        <input  #nbJ type="text" name="" class="auth_input mt-1">
+                        <input  #jr value="{{stadecap}}" type="number" name=""  class="auth_input mt-1">
                     </div>
                     <div class="disp_block log_div ml-3">
                         <label class="ml-5">Durée : </label><br>
@@ -68,7 +68,10 @@
                     <label class="ml-5">Prix : </label><br>
                     <input type="number" name="" id="" value="150.00" disabled="disabled" class="auth_input mt-3 text-green-800 bg-transparent">
                 </div>
-                
+                <!-- <mat-slider [(value)]="stadecap"  min="1" max="5" step="0.5"  thumbLabel aria-label="units">
+                    <input matSliderThumb>
+                  </mat-slider> -->
+                  
 
                 <div class=" mt-7 flex">
                     <input (click)="getValue()"  name="" id="" value="Réserver" class="auth_sub mt-3" [routerLink]="['/stade']">
