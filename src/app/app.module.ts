@@ -27,6 +27,9 @@ import { FooterComponent } from './footer/footer.component';
 import { StadeComponent } from './proprietaire/stade/stade.component';
 import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component';
 import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.component';
+import { PropComplexeComponent } from './proprietaire/complexe/complexe.component';
+import { ReservationTerrainComponent } from './proprietaire/reservation-terrain/reservation-terrain.component';
+import { ReservationListeComponent } from './proprietaire/reservation-liste/reservation-liste.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,6 @@ import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.com
     BrowserModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    MatSliderModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey : 'AIzaSyDoU3JSWTN__iFC2BPqf6F47eXpbBXqZPs'

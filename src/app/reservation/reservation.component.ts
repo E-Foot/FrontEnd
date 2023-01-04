@@ -8,8 +8,6 @@ import { Params, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import {  OnInit,Inject } from '@angular/core';
 import { Stade } from '../shared/stade';
-import { range } from 'rxjs';
-import {MatSliderModule} from '@angular/material/slider'; 
 
 @Component({
   selector: 'app-reservation',
@@ -27,43 +25,30 @@ export class ReservationComponent implements OnInit{
   duree: String;
   date:Date;
   heure:String;
-  jrs:any;
 stade:Stade
-stadecap:number;
-
-
-
   constructor(private reservationService: ReservationService,private stadeService : StadeService, private route: ActivatedRoute,
     private location: Location)/*@Inject('baseURL') public baseURL*/{
     
   }
-
   ngOnInit() {
     const id = this.route.snapshot.params['id'];
     console.log(id)
-    this.stadeService.getStadesById(id).subscribe((stade) => {
-    this.stade = stade;
-    this.stadecap= this.stade.capacite;
-   // console.log(this.nbjElem.nativeElement.value)
-    //this.nbjElem.nativeElement.value=this.stadecap;
 
-   
-    });
 
-  
+
   }
-    @ViewChild("jr") jrelem ;
+    @ViewChild("nbJ") nbjElem ;
     @ViewChild("duree") dureeElem ;
     @ViewChild("heure") heureElem ;
     @ViewChild("date") dateElem ;
     getValue() {
       
       this.reservation= new Reservation;
-      //this.nbj=this.nbjElem.nativeElement.value;
+      this.nbj=this.nbjElem.nativeElement.value;
       this.duree=this.dureeElem.nativeElement.value;
       this.date=this.dateElem.nativeElement.value;
       this.heure=this.heureElem.nativeElement.value;
-      this.jrs=this.jrelem.nativeElement.value
+   
       this.reservation.duree=this.duree;
       
    
@@ -76,10 +61,6 @@ stadecap:number;
       this.stadeService.getStadesById(id).subscribe((stade) => {
         this.stade = stade;
         console.log(this.stade);
-        this.jrs=this.stade.capacite-this.jrs
-        this.reservation.nbr_j_m=this.jrs;
-        
-        this.reservation.anonceIschecked=true;
         this.reservation.stade=stade;
         console.log(this.reservation)
         this.reservationService.putReservation(this.reservation).subscribe(reservation => {

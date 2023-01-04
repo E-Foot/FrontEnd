@@ -22,8 +22,8 @@ export class ReservationService {
         'Content-Type':  'application/json'
       })
     }; 
-   
-    
+    var res=JSON.stringify(reservation); 
+    console.log(res);
     return this.http.post<Reservation>(baseURL + 'api/reservations/save' , reservation, httpOptions)
 }
 

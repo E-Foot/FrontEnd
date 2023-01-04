@@ -8,6 +8,5 @@ export class Reservation {
     prix!: boolean;
     stade!: Stade;
     nbr_j_m!: String;
-    anonceIschecked!: boolean;
    
 }

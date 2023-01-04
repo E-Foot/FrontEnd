@@ -17,7 +17,7 @@
     "@angular/compiler": "^15.0.0",
     "@angular/core": "^15.0.0",
     "@angular/forms": "^15.0.0",
-    "@angular/material": "^15.0.3",
+    "@angular/material": "^15.0.2",
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
@@ -42,6 +42,7 @@
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4",
     "typescript": "~4.8.2"
+<<<<<<< HEAD
   },
   "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.0.",
   "main": "tailwind.config.js",
@@ -56,4 +57,7 @@
     "url": "https://github.com/E-Foot/FrontEnd/issues"
   },
   "homepage": "https://github.com/E-Foot/FrontEnd#readme"
+=======
+  }
+>>>>>>> parent of 77e96a9 (Merge branch 'main' of https://github.com/E-Foot/FrontEnd)
 }
