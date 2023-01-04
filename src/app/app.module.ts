@@ -27,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StadeComponent } from './proprietaire/stade/stade.component';
 import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component';
 import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.component';
+import {MatSliderModule} from '@angular/material/slider'; 
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.com
     BrowserModule,
     HttpClientModule,
     MatProgressSpinnerModule,
+    MatSliderModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey : 'AIzaSyDoU3JSWTN__iFC2BPqf6F47eXpbBXqZPs'
