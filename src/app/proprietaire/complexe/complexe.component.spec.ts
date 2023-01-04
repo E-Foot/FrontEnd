@@ -1,18 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AgmCoreModule } from '@agm/core';
 
-import { ComplexeComponent } from './complexe.component';
+import { PropComplexeComponent } from './complexe.component';
 
 describe('ComplexeComponent', () => {
-  let component: ComplexeComponent;
-  let fixture: ComponentFixture<ComplexeComponent>;
+  let component: PropComplexeComponent;
+  let fixture: ComponentFixture<PropComplexeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ComplexeComponent ]
+      declarations: [ PropComplexeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ComplexeComponent);
+    fixture = TestBed.createComponent(PropComplexeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

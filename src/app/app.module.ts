@@ -27,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StadeComponent } from './proprietaire/stade/stade.component';
 import { AddStadeComponent } from './proprietaire/add-stade/add-stade.component';
 import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.component';
+import { PropComplexeComponent } from './proprietaire/complexe/complexe.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.com
     FooterComponent,
     StadeComponent,
     AddStadeComponent,
-    SponsorshipComponent
+    SponsorshipComponent,
+    PropComplexeComponent
   ],
   imports: [
     BrowserModule,
