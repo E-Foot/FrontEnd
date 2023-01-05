@@ -14,6 +14,8 @@ import { PropComplexeComponent } from '../proprietaire/complexe/complexe.compone
 import { ReservationTerrainComponent } from '../proprietaire/reservation-terrain/reservation-terrain.component' 
 import { ReservationListeComponent } from '../proprietaire/reservation-liste/reservation-liste.component' 
 import { SponsorshipComponent } from '../proprietaire/sponsorship/sponsorship.component'
+import { AnnonceComponent } from '../annonce/annonce.component'
+import { AnnoncesComponent } from '../annonces/annonces.component'
 
 export const routes: Routes = [
   { path: '',     component: HomeComponent },
@@ -30,5 +32,7 @@ export const routes: Routes = [
   { path: 'proprietaire/reservations/liste',     component: ReservationListeComponent },
   { path: 'signup',  component: RegisterComponent },
   { path: 'complexe/:id',  component: ComplexeComponent },
+  { path: 'annonce/:id',  component: AnnonceComponent },
+  { path: 'annonces',  component: AnnoncesComponent },
   
 ];

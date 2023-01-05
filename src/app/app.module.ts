@@ -30,6 +30,8 @@ import { SponsorshipComponent } from './proprietaire/sponsorship/sponsorship.com
 import { PropComplexeComponent } from './proprietaire/complexe/complexe.component';
 import { ReservationTerrainComponent } from './proprietaire/reservation-terrain/reservation-terrain.component';
 import { ReservationListeComponent } from './proprietaire/reservation-liste/reservation-liste.component';
+import { AnnonceComponent } from './annonce/annonce.component';
+import { AnnoncesComponent } from './annonces/annonces.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { ReservationListeComponent } from './proprietaire/reservation-liste/rese
     SponsorshipComponent,
     PropComplexeComponent,
     ReservationTerrainComponent,
-    ReservationListeComponent
+    ReservationListeComponent,
+    AnnonceComponent,
+    AnnoncesComponent
   ],
   imports: [
     BrowserModule,
