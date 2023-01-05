@@ -1,3 +1,4 @@
 <app-header *ngIf="!router.url.includes('proprietaire/')"></app-header>
 <app-header-proprietaire *ngIf="router.url.includes('proprietaire/')"></app-header-proprietaire>
 <router-outlet></router-outlet>
+<app-footer *ngIf="!router.url.includes('proprietaire/')"></app-footer>
