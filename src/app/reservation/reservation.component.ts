@@ -15,6 +15,7 @@ import { Stade } from '../shared/stade';
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit{
+  
 
   reservation: Reservation;
   
@@ -73,5 +74,4 @@ stade:Stade
 
     }
  
-
 }
