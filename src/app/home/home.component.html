@@ -4,6 +4,7 @@
     </div>
     <div class="flex pl-40 pr-40 mt-20">
         <div class="annonce w-1/4 h-fit block ml-0 mr-0 pt-7">
+            <div  *ngFor="let annonce of annonces" >
             <p class="center ml-0 mr-0 text-center font-medium text-lg">Annonces</p>
             <img src="../../assets/logos/logo_annonce.png" class="center mt-10" alt="">
             <a href="" class="flex mb-3">
@@ -14,9 +15,9 @@
             <div class="annonce_chx block text-left">
                 <div class="flex w-full pl-5">
                     <div class="space-y-0 mb-2 mt-2">
-                        <p class="space-y-0 text-base">Urban Five - Marrakech</p>
-                        <p>12 Janvier 2023 - 22h00</p>
-                        <h5 class="text-sm left-0">Joueurs Manquées : 5</h5>
+                        <p class="space-y-0 text-base">{{annonce.stade.complexe.nom}}</p>
+                        <p>{{annonce.dateReservation+' '+annonce.heureReservation}}</p>
+                        <h5 class="text-sm left-0">{{annonce.nbr_j_m}}</h5>
                     </div>
                     <img src="../../assets/collabs/uf.png" class="h-12 m-auto ml-auto mr-auto " alt="">
                 </div>
@@ -26,40 +27,11 @@
                     </button>
                 </div>
             </div>
-            <div class="annonce_chx block text-left">
-                <div class="flex w-full pl-5">
-                    <div class="space-y-0 mb-2 mt-2">
-                        <p class="space-y-0 text-base">Urban Five - Marrakech</p>
-                        <p>12 Janvier 2023 - 22h00</p>
-                        <h5 class="text-sm left-0">Joueurs Manquées : 5</h5>
-                    </div>
-                    <img src="../../assets/collabs/uf.png" class="h-12 m-auto ml-auto mr-auto " alt="">
-                </div>
-                <div>
-                    <button class="w-full annonce_reserver h-9 text-secondary">
-                        Réserver
-                    </button>
-                </div>
-            </div>
-            <div class="annonce_chx block text-left">
-                <div class="flex w-full pl-5">
-                    <div class="space-y-0 mb-2 mt-2">
-                        <p class="space-y-0 text-base">Urban Five - Marrakech</p>
-                        <p>12 Janvier 2023 - 22h00</p>
-                        <h5 class="text-sm left-0">Joueurs Manquées : 5</h5>
-                    </div>
-                    <img src="../../assets/collabs/uf.png" class="h-12 m-auto ml-auto mr-auto " alt="">
-                </div>
-                <div>
-                    <button class="w-full annonce_reserver h-9 text-secondary">
-                        Réserver
-                    </button>
-                </div>
-            </div>
-
+            
             <div class="pr-7 pt-2">
                 <h5 class="text-links text-right mr-7">Plus d'annonces...</h5>
             </div>
+        </div>
         </div>
         <div class="event w-3/4 h-9 ml-5">
             <div class="tournoi_event flex">
@@ -103,4 +75,3 @@
         </div>
     </div>
 </div>
-<app-footer></app-footer>

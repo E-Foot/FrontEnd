@@ -29,4 +29,8 @@ export class StadeService {
     return this.http.get(baseURL + 'api/stade/'+id)
    }
 
+   putStade(stade: Stade): Observable <Stade> {
+    return this.http.post<Stade>(baseURL + 'api/stades/save' , stade)
+}
+
 }
