@@ -4,7 +4,6 @@
     </div>
     <div class="flex pl-40 pr-40 mt-20">
         <div class="annonce w-1/4 h-fit block ml-0 mr-0 pt-7">
-            <div  *ngFor="let annonce of annonces" >
             <p class="center ml-0 mr-0 text-center font-medium text-lg">Annonces</p>
             <img src="../../assets/logos/logo_annonce.png" class="center mt-10" alt="">
             <a href="" class="flex mb-3">
@@ -12,6 +11,8 @@
                 <img src="../../assets/icons/annonce_res.png" class="h-5 center" alt="">
                 &nbsp;&nbsp;&nbsp;Publier une annonce</p>
             </a>
+            <div  *ngFor="let annonce of annonces" >
+
             <div class="annonce_chx block text-left">
                 <div class="flex w-full pl-5">
                     <div class="space-y-0 mb-2 mt-2">
