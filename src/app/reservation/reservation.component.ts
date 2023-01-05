@@ -17,6 +17,7 @@ import {MatSliderModule} from '@angular/material/slider';
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit{
+  
 
   reservation: Reservation;
   
@@ -96,5 +97,4 @@ stadecap:any;
 
     }
  
-
 }
