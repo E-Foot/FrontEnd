@@ -31,4 +31,8 @@ export class ReservationService {
   return this.http.get<Reservation[]>(baseURL + 'api/annonces');
  }
 
+  getReservationsByProprietaire(id: number):Observable<Reservation[]>{
+  return this.http.get<Reservation[]>(baseURL + 'api/reservationsParProprietaire/'+id);
+}
+
 }

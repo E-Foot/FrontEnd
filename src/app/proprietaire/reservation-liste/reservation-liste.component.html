@@ -15,7 +15,7 @@
     </div>
     <div class="bottom_liste center block w-3/5 pb-20">
         <p class="text-base pl-4">Liste des résérvations</p>
-        <div class="w-full">
+        <div  class="w-full">
             <table class="res_table w-full">
                 <!-- <caption>Liste des résérvation par un stade</caption> -->
                 <thead class="head_table h-11 w-full">
@@ -29,171 +29,19 @@
                         <th>Etat de paiement</th>
                     </tr>
                 </thead>
+                
                 <tbody class="body_table h-11 ">
                     <!-- Loop pour la liste des réservations d'un stade -->
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
+                    <tr *ngFor="let reservation of reservations"  class="body_ligne h-11 w-full">
+                        <th>{{reservation.dateReservation}}</th>
+                        <th>{{'0'+reservation.heureReservation+':00'}}</th>
                         <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
+                        <th>{{reservation.stade.capacite}}</th>
+                        <th>{{reservation.prix}}</th>
+                        <th>test</th>
                         <th class="text-green-600">Payé</th>
                     </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-red-600">Non Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-red-600">Non Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-red-600">Non Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22-11-2022</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>12</th>
-                        <th>300 Dh</th>
-                        <th>Zineb Touzani</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    
+                                  
                 </tbody>
             </table>
         </div>

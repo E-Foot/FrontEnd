@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { AgmCoreModule } from '@agm/core';
+import { ReservationService } from 'src/app/services/reservation.service';
+import { Reservation } from 'src/app/shared/reservation';
 
 @Component({
   selector: 'app-complexe',
@@ -11,5 +13,7 @@ export class PropComplexeComponent {
   longitude: number = -8.008889;
   // locationChoosen = false;
 
-  
+ 
+
+
 }
