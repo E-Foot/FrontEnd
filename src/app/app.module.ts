@@ -12,7 +12,6 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { StadesComponent } from './stades/stades.component';
 import { HttpClientModule } from '@angular/common/http';
 import { baseURL } from './shared/baseurl';
-import { Us06Component } from './us06/us06.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { PaiementComponent } from './paiement/paiement.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -51,7 +50,7 @@ import { ChartModule } from 'angular-highcharts';
     LoginComponent,
     RegisterComponent,
     StadesComponent,
-    Us06Component,
+    
     ReservationComponent,
     PaiementComponent,
     MapComponent,
