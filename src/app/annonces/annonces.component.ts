@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core';  
+import { OverlayModule } from '@angular/cdk/overlay';
+
 
 @Component({
   selector: 'app-annonces',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AnnoncesComponent {
 
+  
 }

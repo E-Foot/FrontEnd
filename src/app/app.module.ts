@@ -32,6 +32,12 @@ import { ReservationTerrainComponent } from './proprietaire/reservation-terrain/
 import { ReservationListeComponent } from './proprietaire/reservation-liste/reservation-liste.component';
 import { AnnonceComponent } from './annonce/annonce.component';
 import { AnnoncesComponent } from './annonces/annonces.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { HeaderAdminComponent } from './header-admin/header-admin.component';
+import { UsersComponent } from './admin/users/users.component';
+import { SignalsComponent } from './admin/signals/signals.component';
+import { BloquageComponent } from './admin/bloquage/bloquage.component'
+
 
 @NgModule({
   declarations: [
@@ -56,7 +62,11 @@ import { AnnoncesComponent } from './annonces/annonces.component';
     ReservationTerrainComponent,
     ReservationListeComponent,
     AnnonceComponent,
-    AnnoncesComponent
+    AnnoncesComponent,
+    HeaderAdminComponent,
+    UsersComponent,
+    SignalsComponent,
+    BloquageComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +78,9 @@ import { AnnoncesComponent } from './annonces/annonces.component';
       //AIzaSyDvjRJ4hPTpxWNcB01x1pzQtupCSXhksbs
     }),
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    OverlayModule
+
    
   ],
   providers: [

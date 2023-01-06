@@ -16,6 +16,9 @@ import { ReservationListeComponent } from '../proprietaire/reservation-liste/res
 import { SponsorshipComponent } from '../proprietaire/sponsorship/sponsorship.component'
 import { AnnonceComponent } from '../annonce/annonce.component'
 import { AnnoncesComponent } from '../annonces/annonces.component'
+import { UsersComponent } from '../admin/users/users.component'
+import { SignalsComponent } from '../admin/signals/signals.component';
+import { BloquageComponent } from '../admin/bloquage/bloquage.component';
 
 export const routes: Routes = [
   { path: '',     component: HomeComponent },
@@ -34,5 +37,8 @@ export const routes: Routes = [
   { path: 'complexe/:id',  component: ComplexeComponent },
   { path: 'annonce/:id',  component: AnnonceComponent },
   { path: 'annonces',  component: AnnoncesComponent },
+  { path: 'admin/users',  component: UsersComponent },
+  { path: 'admin/signals',  component: SignalsComponent },
+  { path: 'admin/bloquage',  component: BloquageComponent },
   
 ];
