@@ -32,49 +32,13 @@
                 
                 <tbody class="body_table h-11 ">
                     <!-- Loop pour la liste des réservations d'un stade -->
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22 Janvier 2022</th>
-                        <th>06:00</th>
+                    <tr *ngFor="let reservation of reservations"  class="body_ligne h-11 w-full">
+                        <th>{{reservation.dateReservation}}</th>
+                        <th>{{'0'+reservation.heureReservation+':00'}}</th>
                         <th>07:00</th>
-                        <th>12</th>
-                        <th>200 Dh</th>
-                        <th>Anass Nebdaoui</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>1 Decembre 2006</th>
-                        <th>06:00</th>
-                        <th>07:00</th>
-                        <th>7</th>
-                        <th>200 Dh</th>
-                        <th>Zakaria AitKatib</th>
-                        <th class="text-red-600">Non Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>22 Fevrier 2038</th>
-                        <th>12:00</th>
-                        <th>13:00</th>
-                        <th>10</th>
-                        <th>200 Dh</th>
-                        <th>Taha Debbagh</th>
-                        <th class="text-red-600">Non Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>13 Janvier 2032</th>
-                        <th>13:00</th>
-                        <th>14:00</th>
-                        <th>12</th>
-                        <th>200 Dh</th>
-                        <th>Zakaria Rabou</th>
-                        <th class="text-green-600">Payé</th>
-                    </tr>
-                    <tr class="body_ligne h-11 w-full">
-                        <th>3 Mars 2001</th>
-                        <th>21:00</th>
-                        <th>22:00</th>
-                        <th>1</th>
-                        <th>200 Dh</th>
-                        <th>Zidahi Reda</th>
+                        <th>{{reservation.stade.capacite}}</th>
+                        <th>{{reservation.prix}}</th>
+                        <th>test</th>
                         <th class="text-green-600">Payé</th>
                     </tr>
                                   
