@@ -40,5 +40,6 @@ export const routes: Routes = [
   { path: 'admin/users',  component: UsersComponent },
   { path: 'admin/signals',  component: SignalsComponent },
   { path: 'admin/bloquage',  component: BloquageComponent },
+  { path: 'admin/Logs',  component: BloquageComponent },
   
 ];
