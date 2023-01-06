@@ -7,14 +7,14 @@
         <div >
 
             <div >
-                <div class="terrains_chx w-3/5 h-40 center ">                 
+                <div *ngFor="let annonce of annonces"  class="terrains_chx w-3/5 h-40 center ">                 
                     <div class="flex">
                         <!-- <app-map class="w-72"></app-map> -->
                         <img src="../../assets/images/terr_test.png" class="h-40" alt="">
 
                         <div class="block pl-8 pt-3 space-y-0">
-                            <h1 class="pt-4"><a>Urban 5 - Marrakech<p class="text-base"></p></a></h1>
-                            <p class="text-lg ">Joueurs Manquées 3 /12</p>
+                            <h1 class="pt-4"><a>{{annonce.stade.complexe.nom}}<p class="text-base"></p></a></h1>
+                            <p class="text-lg ">Joueurs Manquées: {{annonce.nbr_j_m+'/'+annonce.stade.capacite}}</p>
                           
                             <button  class="button_rej text-white text-sm w-32 h-8 rounded-sm res_button -mt-4" >Rejoindre</button>
                         </div>
