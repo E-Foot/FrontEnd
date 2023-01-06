@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
     "@googlemaps/react-wrapper": "^1.1.35",
+    "creditcardpayments": "^1.0.3",
     "google-maps-react": "^2.0.6",
     "ionic-native": "^2.9.0",
     "rxjs": "~7.5.0",
