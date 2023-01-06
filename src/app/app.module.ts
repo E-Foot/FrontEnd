@@ -37,7 +37,11 @@ import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { UsersComponent } from './admin/users/users.component';
 import { SignalsComponent } from './admin/signals/signals.component';
 import { BloquageComponent } from './admin/bloquage/bloquage.component';
-import { ContactusComponent } from './contactus/contactus.component'
+import { ContactusComponent } from './contactus/contactus.component';
+import { ChartComponent } from './proprietaire/chart/chart.component'
+import { AccordionModule } from 'primeng/accordion';     
+import { MenuItem } from 'primeng/api';  
+import { ChartModule } from 'angular-highcharts';
 
 
 @NgModule({
@@ -69,6 +73,7 @@ import { ContactusComponent } from './contactus/contactus.component'
     SignalsComponent,
     BloquageComponent,
     ContactusComponent,
+    ChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -81,8 +86,9 @@ import { ContactusComponent } from './contactus/contactus.component'
     }),
     BrowserAnimationsModule,
     MatIconModule,
-    OverlayModule
-
+    OverlayModule,
+    ChartModule,
+    AccordionModule,
    
   ],
   providers: [

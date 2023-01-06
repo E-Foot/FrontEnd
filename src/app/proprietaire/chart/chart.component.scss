@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../../res/CIRCULARSTD-MEDIUM.OTF');
+}
+
+.center{
+    margin: 0 auto;
+}
+.container, h1{
+    font-family: 'Circular';
+
+}
+.container{
+    height: 500px;
+
+}
+.pie{
+    margin-left: 100px;
+}

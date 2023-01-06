@@ -1,1 +1,36 @@
-<p>bloquage works!</p>
+<div class="bottom_liste center block w-4/5 pb-20 pt-24">
+    <p class="text-base pl-4">Utilisateurs Signalés</p>
+    <div  class="w-full">
+        <!-- WHERE ETAT Bloquage = 1 -->
+        <table class="res_table w-full">
+            <!-- <caption>Liste des résérvation par un stade</caption> -->
+            <thead class="head_table h-11 w-full">
+                <tr class="w-full">
+                    <th>Id</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Email</th>
+                    <th>Adresse</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            
+            <tbody class="body_table h-11 ">
+                <!-- Loop pour la liste des réservations d'un stade -->
+                <tr class="body_ligne h-11 w-full">
+                    <th>1</th>
+                    <th>Anass</th>
+                    <th>Nebdaoui</th>
+                    <th>Nebdaoui.anass@gmail.com</th>
+                    <th>Rue mohammed 6, Khouribga</th>
+                    <th>Propriétaire</th>
+                    <th class="flex"><button class="bg-green-600 w-28 h-9 rounded-md flex center pt-2 text-white"><p class="pl-5"> Débloquer &nbsp;</p><img src="../../../assets/icons/delete.png" class="h-4 pt-1" alt="" srcset=""></button></th>
+                    
+                </tr>
+                              
+            </tbody>
+        </table>
+    </div>
+    
+</div>

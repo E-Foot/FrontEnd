@@ -21,6 +21,7 @@ import { SignalsComponent } from '../admin/signals/signals.component';
 import { BloquageComponent } from '../admin/bloquage/bloquage.component';
 import { ContactusComponent } from '../contactus/contactus.component';
 import { PaiementComponent } from '../paiement/paiement.component';
+import { ChartComponent } from '../proprietaire/chart/chart.component';
 
 export const routes: Routes = [
   { path: '',     component: HomeComponent },
@@ -35,6 +36,7 @@ export const routes: Routes = [
   { path: 'proprietaire/stade',     component: StadeComponent },
   { path: 'proprietaire/complexe',     component: PropComplexeComponent },
   { path: 'proprietaire/sponsor',     component: SponsorshipComponent },
+  { path: 'proprietaire/chart',     component: ChartComponent },
   { path: 'proprietaire/reservations',     component: ReservationTerrainComponent },
   { path: 'proprietaire/reservations/liste',     component: ReservationListeComponent },
   { path: 'signup',  component: RegisterComponent },
