@@ -36,7 +36,8 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { UsersComponent } from './admin/users/users.component';
 import { SignalsComponent } from './admin/signals/signals.component';
-import { BloquageComponent } from './admin/bloquage/bloquage.component'
+import { BloquageComponent } from './admin/bloquage/bloquage.component';
+import { ContactusComponent } from './contactus/contactus.component'
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { BloquageComponent } from './admin/bloquage/bloquage.component'
     UsersComponent,
     SignalsComponent,
     BloquageComponent,
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,

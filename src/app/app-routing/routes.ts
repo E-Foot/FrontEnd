@@ -19,6 +19,8 @@ import { AnnoncesComponent } from '../annonces/annonces.component'
 import { UsersComponent } from '../admin/users/users.component'
 import { SignalsComponent } from '../admin/signals/signals.component';
 import { BloquageComponent } from '../admin/bloquage/bloquage.component';
+import { ContactusComponent } from '../contactus/contactus.component';
+import { PaiementComponent } from '../paiement/paiement.component';
 
 export const routes: Routes = [
   { path: '',     component: HomeComponent },
@@ -26,6 +28,8 @@ export const routes: Routes = [
   { path: 'login',     component: LoginComponent },
   { path: 'stadee',     component: Us06Component },
   { path: 'stade',     component: StadesComponent },
+  { path: 'contact',     component: ContactusComponent },
+  { path: 'paiement',     component: PaiementComponent },
   { path: 'reservation/:id',     component: ReservationComponent },
   { path: 'reservation',     component: ReservationComponent },
   { path: 'proprietaire/stade',     component: StadeComponent },
@@ -40,5 +44,6 @@ export const routes: Routes = [
   { path: 'admin/users',  component: UsersComponent },
   { path: 'admin/signals',  component: SignalsComponent },
   { path: 'admin/bloquage',  component: BloquageComponent },
+  
   
 ];

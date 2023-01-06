@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../res/CIRCULARSTD-MEDIUM.OTF');
+}
+
+input, button, h1, p{
+    font-family: 'Circular';
+}
+
 .center{
     margin: 0 auto;
 }
@@ -23,4 +32,44 @@
 .res_button{
     margin-left: 450px;
     margin-top: 7px;
+}
+.finput{
+    height: 50px;
+    width: 250px;
+    border: 1px solid #E90052 ;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding-left: 25px;
+    outline: none;
+
+}
+
+.sinput{
+    height: 50px;
+    width: 250px;
+    border-top: 1px solid #E90052;
+    border-bottom: 1px solid #E90052;
+    padding-left: 25px;
+    outline: none;
+
+}
+.tinput{
+    background-color: #E90052;
+    height: 50px;
+    width: 130px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: 0.5s;
+}
+.tinput:hover{
+    color: #E90052;
+    background-color: white;
+    border: #E90052 0.1px solid;
+    box-shadow: 0px 4px 25px rgba(255, 40, 130, 0.49);
+}
+.filtre_comp{
+    width: 635px;
+}
+.filt_text{
+    // text-decoration: underline #E90052;
 }

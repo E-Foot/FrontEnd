@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../../res/CIRCULARSTD-MEDIUM.OTF');
+}
+
+.sponsor, h1, p{
+    font-family: 'Circular';
+}
+
+.sponsor{
+    z-index: 2;
+}
+.center{
+    margin: 0 auto;
+}
+
+.sponsor_right{
+    // background-image: url('../../assets/images/bg_sponsor.png');
+    background-size: cover;
+    transition: 1s;
+}
+.sponsor_right:hover .ball {
+    transform: translate(-125px,+45px);
+    transition: all 0.3s ease-out;
+}
+.sponsor_right:hover .messi {
+    transform: translate(-25px,-25px);
+    transition: all 0.3s ease-out;
+}
+
+
+.sponsor_input{
+    width: 490px;
+    height: 45px;
+    border-radius: 3px;
+    color: #222222;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: #222222 1px solid;
+
+}
+.sponsor_inputs{
+    width: 490px;
+    height: 145px;
+    border-radius: 3px;
+    color: #222222;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: #222222 1px solid;
+}
+.sponsor_area{
+    width: 490px;
+    height: 145px;
+    border-radius: 3px;
+    color: black;
+  
+    background-color: white;
+}
+.sponsor_button{
+    width: 490px;
+    height: 50px;
+    color: white;
+    background-color: #3165F3;
+    border-radius: 7px;
+}
