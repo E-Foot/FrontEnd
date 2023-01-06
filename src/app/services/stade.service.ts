@@ -32,5 +32,7 @@ export class StadeService {
    putStade(stade: Stade): Observable <Stade> {
     return this.http.post<Stade>(baseURL + 'api/stades/save' , stade)
 }
-
+    getStadesByComplexeId(id: number): Observable<Stade[]>{
+      return this.http.get<Stade[]>(baseURL + 'api/stadesByComplexe/'+id)
+     }
 }
