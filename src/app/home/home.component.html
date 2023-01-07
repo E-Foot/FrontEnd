@@ -8,7 +8,7 @@
             <p class="center ml-0 mr-0 text-center font-medium text-lg">Annonces</p>
             <img src="../../assets/logos/logo_annonce.png" class="center mt-10" alt="">
             <a href="" class="flex mb-3">
-                <p style="color: #800080;" class="center flex">
+                <p [routerLink]="['stade']" style="color: #800080;" class="center flex">
                 <img src="../../assets/icons/annonce_res.png" class="h-5 center" alt="">
                 &nbsp;&nbsp;&nbsp;Publier une annonce</p>
             </a>
@@ -17,8 +17,8 @@
                 <div class="flex w-full pl-5">
                     <div class="space-y-0 mb-2 mt-2">
                         <p class="space-y-0 text-base">{{annonce.stade.complexe.nom}}</p>
-                        <p>{{annonce.dateReservation+' '+annonce.heureReservation}}</p>
-                        <h5 class="text-sm left-0">{{annonce.nbr_j_m}}</h5>
+                        <p>{{annonce.dateReservation+'  0'+annonce.heureReservation+':00'}}</p>
+                        <h5 class="text-sm left-0">Nombre de Joueurs manquees: {{annonce.nbr_j_m}}</h5>
                     </div>
                     <img src="../../assets/collabs/uf.png" class="h-12 m-auto ml-auto mr-auto " alt="">
                 </div>
