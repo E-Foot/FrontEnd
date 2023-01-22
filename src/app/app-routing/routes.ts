@@ -21,10 +21,13 @@ import { BloquageComponent } from '../admin/bloquage/bloquage.component';
 import { ContactusComponent } from '../contactus/contactus.component';
 import { PaiementComponent } from '../paiement/paiement.component';
 import { ChartComponent } from '../proprietaire/chart/chart.component';
+import { RecuComponent } from '../recu/recu.component';
+import { AuthComponent } from '../admin/auth/auth.component';
 
 export const routes: Routes = [
   { path: '',     component: HomeComponent },
   { path: 'home',     component: HomeComponent },
+  { path: 'recu',     component: RecuComponent },
   { path: 'login',     component: LoginComponent },
   { path: 'stade',     component: StadesComponent },
   { path: 'contact',     component: ContactusComponent },
@@ -41,6 +44,7 @@ export const routes: Routes = [
   { path: 'complexe/:id',  component: ComplexeComponent },
   { path: 'annonce/:id',  component: AnnonceComponent },
   { path: 'annonces',  component: AnnoncesComponent },
+  { path: 'admin',  component: AuthComponent },
   { path: 'admin/users',  component: UsersComponent },
   { path: 'admin/signals',  component: SignalsComponent },
   { path: 'admin/bloquage',  component: BloquageComponent },

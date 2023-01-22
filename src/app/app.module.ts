@@ -41,6 +41,8 @@ import { ChartComponent } from './proprietaire/chart/chart.component'
 import { AccordionModule } from 'primeng/accordion';     
 import { MenuItem } from 'primeng/api';  
 import { ChartModule } from 'angular-highcharts';
+import { RecuComponent } from './recu/recu.component';
+import { AuthComponent } from './admin/auth/auth.component';
 
 
 @NgModule({
@@ -73,6 +75,9 @@ import { ChartModule } from 'angular-highcharts';
     BloquageComponent,
     ContactusComponent,
     ChartComponent,
+    RecuComponent,
+    AuthComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -88,7 +93,6 @@ import { ChartModule } from 'angular-highcharts';
     OverlayModule,
     ChartModule,
     AccordionModule,
-   
   ],
   providers: [
      {provide: 'BaseURL', useValue: baseURL}
